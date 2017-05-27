@@ -21,6 +21,7 @@
 		    })(document, window);
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
 		<style type="text/css">
 			*{
 				margin: 0;padding: 0;
@@ -181,11 +182,23 @@
 				color: #fff;
 				bottom: 0;
 			}
+			.swiper-container{
+				height: 5.5rem;
+			}
+			.swiper-container img{
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body>
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide"><img src="img/hear01.png"/></div>
+		    <div class="swiper-slide"><img src="img/hear01.png"/></div>
+		    <div class="swiper-slide"><img src="img/hear01.png"/></div>
+		  </div>
+		</div>
 		<div class="lbt">
-			<img src="img/hear01.png" alt="" />
 			<p>知贝儿科VIP挂号服务</p>
 		</div>
 		<div class="presenter fffbg">
@@ -303,6 +316,11 @@
 			<p>A：有的，奥园城市天地的停车位很充足，家长们不用担心找不到停车位。</p>
 		</div>
 		<div class="tele" id="tele">电话预约</div>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script> 
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 5000,//可选选项，自动滑动
+			})
+		</script>
 	</body>
-	
 </html>
